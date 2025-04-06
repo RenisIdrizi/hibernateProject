@@ -22,7 +22,7 @@ public class Reservations {
     private LocalDateTime returnDate;
     @OneToMany(mappedBy = "reservations")
     @JoinColumn(name = "book_id")
-    private Book book;
+    private Book books;
 
 
 }
