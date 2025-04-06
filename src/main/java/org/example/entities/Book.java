@@ -2,6 +2,7 @@ package org.example.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.example.staticEnum.Genre;
 
 import java.time.LocalDate;
 
@@ -16,6 +17,8 @@ public class Book {
     private String title;
     private LocalDate published_date;
     private Long quantity;
+    @Enumerated(EnumType.STRING)
+    private Genre genre;
     @ManyToOne
     @JoinColumn(name = "author_id")
     private Author author;
