@@ -18,6 +18,6 @@ public class Book {
     private Long quantity;
     @ManyToOne
     @JoinColumn(name = "author_id")
-    private Long author_id;
+    private Author author;
 
 }
