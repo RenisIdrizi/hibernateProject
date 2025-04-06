@@ -1,4 +1,8 @@
 package org.example.staticEnum;
 
-public class Genre {
+public enum Genre {
+    COMEDY,
+    ACTION,
+    ROMANCE,
+    THRILLER;
 }
