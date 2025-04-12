@@ -3,6 +3,7 @@ package org.example.entities;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -15,7 +16,7 @@ public class Members {
     private String firstName;
     private String lastName;
     @Column(name = "membership_date")
-    private Date membershipDate;
+    private LocalDate membershipDate;
     @Column(name = "contact_info")
     private String contactInfo;
 

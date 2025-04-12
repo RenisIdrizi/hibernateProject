@@ -11,8 +11,11 @@ import java.util.List;
 public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String first_name;
-    private String last_name;
+    private Long id;
+    @Column(name = "first_name")
+    private String firstName;
+    @Column(name = "last_name")
+    private String lastName;
     @Column(name = "biography")
     private String bio;
     @OneToMany(mappedBy = "author")

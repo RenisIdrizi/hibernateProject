@@ -15,7 +15,8 @@ public class Book {
     @Column(name = "book_id")
     private Long bookId;
     private String title;
-    private LocalDate published_date;
+    @Column(name = "published_date")
+    private LocalDate publishedDate;
     private Long quantity;
     @Enumerated(EnumType.STRING)
     private Genre genre;
